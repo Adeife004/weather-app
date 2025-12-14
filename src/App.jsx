@@ -4,7 +4,7 @@ import CurrentWeather from './components/CurrentWeather';
 import WeatherStats from './components/WeatherStats';
 import HourlyForecast from './components/HourlyForecast';
 import WeeklyForecast from './components/WeeklyForecast';
-import { fetchCurrentWeather, fetchForecast } from './services/weatherApi';
+import { fetchCurrentWeather, fetchForecast } from './services/weatherAPI.js';
 
 function App() {
   const [city, setCity] = useState('London');
