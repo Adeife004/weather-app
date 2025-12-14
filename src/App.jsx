@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import SearchBar from './components/SearchBar';
+import BarSearch from './components/BarSearch';
 import CurrentWeather from './components/CurrentWeather';
 import WeatherStats from './components/WeatherStats';
 import HourlyForecast from './components/HourlyForecast';
 import WeeklyForecast from './components/WeeklyForecast';
-import { fetchCurrentWeather, fetchForecast } from './services/weatherAPI';
+import { fetchCurrentWeather, fetchForecast } from './services/weatherApi';
 
 function App() {
   const [city, setCity] = useState('London');
@@ -106,8 +106,8 @@ function App() {
           </button>
         </div>
 
-        {/* Search Bar */}
-        <SearchBar onSearch={handleSearch} currentCity={currentWeather?.name} />
+        {/* BarSearch */}
+        <BarSearch onSearch={handleSearch} currentCity={currentWeather?.name} />
 
         {/* Current Weather */}
         <CurrentWeather data={currentWeather} unit={unit} />

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Search, MapPin } from 'lucide-react';
 
-const SearchBar = ({ onSearch, currentCity }) => {
+const BarSearch = ({ onSearch, currentCity }) => {
   const [input, setInput] = useState('');
 
   const handleSearch = () => {
@@ -51,4 +51,4 @@ const SearchBar = ({ onSearch, currentCity }) => {
   );
 };
 
-export default SearchBar;
+export default BarSearch;
